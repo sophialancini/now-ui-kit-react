@@ -57,9 +57,6 @@ function CarouselSection() {
     <>
       <div className="section" id="carousel">
         <Container>
-          <div className="title">
-            <h4>Carousel</h4>
-          </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
               <Carousel
@@ -79,7 +76,7 @@ function CarouselSection() {
                       onExited={onExited}
                       key={item.src}
                     >
-                      <img src={item.src} alt={item.altText} />
+                      <img src={item.src} alt={item.altText} style={{maxWidth: '100%'}} />
                       <div className="carousel-caption d-none d-md-block">
                         <h5>{item.caption}</h5>
                       </div>
