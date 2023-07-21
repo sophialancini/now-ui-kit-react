@@ -7,7 +7,7 @@ import { LanguageContext } from "App";
 // core components
 
 function SimpleHeader(props) {
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   let pageHeader = React.createRef();
 

@@ -7,7 +7,7 @@ import { LanguageContext } from "App";
 
 function ContactInfo() {
 
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   return (
     <>

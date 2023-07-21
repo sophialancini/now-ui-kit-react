@@ -18,7 +18,7 @@ import SimpleHeader from "components/Headers/SimpleHeader.js";
 import { LanguageContext } from "App.js";
 
 function CardasPage() {
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   React.useEffect(() => {
     document.body.classList.add("landing-page");

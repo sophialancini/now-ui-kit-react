@@ -22,7 +22,7 @@ function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
 
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -208,12 +208,12 @@ function IndexNavbar() {
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem
-                    onClick={() => setLanguage("pt")}
+                    onClick={() => updateLanguage("pt")}
                   >
                     Português
                   </DropdownItem>
                   <DropdownItem
-                    onClick={() => setLanguage("en")}
+                    onClick={() => updateLanguage("en")}
                   >
                     English                    
                   </DropdownItem>

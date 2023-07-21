@@ -9,7 +9,7 @@ import { LanguageContext } from "App";
 
 function Sobre() {
 
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   return (
     <>

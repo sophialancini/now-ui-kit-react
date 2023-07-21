@@ -9,7 +9,7 @@ import { LanguageContext } from "App";
 
 function IndexHeader() {
 
-  const { language, setLanguage } = React.useContext(LanguageContext);
+  const { language, updateLanguage } = React.useContext(LanguageContext);
 
   let pageHeader = React.createRef();
 
